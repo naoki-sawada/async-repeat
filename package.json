@@ -1,11 +1,14 @@
 {
   "name": "async-repeat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Repeat function with async",
   "main": "lib/index.js",
   "repository": "https://github.com/naoki-sawada/async-repeat",
   "author": "Naoki Sawada",
   "license": "MIT",
+  "keywords": [
+    "async"
+  ],
   "scripts": {
     "test:watch": "jest -c jest.config.js --watch",
     "test": "jest -c jest.config.js --forceExit",
