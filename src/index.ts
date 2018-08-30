@@ -10,7 +10,7 @@ export default function repeat(
 ): Promise<any> {
   return new Promise((resolve, reject) => {
     options = options || {};
-    options.maxCount = options.maxCount || 60;
+    options.maxCount = options.maxCount || 10;
     options.delay = options.delay || 3000;
     options.defaultResult = options.defaultResult || null;
 
