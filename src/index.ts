@@ -4,10 +4,7 @@ interface IRepeatOptions {
   maxCount?: number;
 }
 
-export default function repeat(
-  callback: any,
-  options?: IRepeatOptions,
-): Promise<any> {
+function repeat(callback: any, options?: IRepeatOptions): Promise<any> {
   return new Promise((resolve, reject) => {
     options = options || {};
     options.maxCount = options.maxCount || 10;
@@ -41,3 +38,5 @@ export default function repeat(
     };
   });
 }
+
+export = repeat;
